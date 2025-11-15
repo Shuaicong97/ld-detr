@@ -1,8 +1,15 @@
+#!/bin/bash -l
+
+#SBATCH --job-name=train_with_mot17_a40
+#SBATCH --time=24:00:00
+#SBATCH --gres=gpu:a40:1
+#SBATCH --output=/home/atuin/v100dd/v100dd19/sbatch_ld-detr_sf_clip/result-%x-%j.txt
+
 dset_name=hl
 ctx_mode=video_tef
 v_feat_types=slowfast_clip
 t_feat_type=clip 
-results_root=results_qvhighlight
+results_root=/home/atuin/v100dd/v100dd19/ld-detr/outputs/results_qvhighlight
 exp_id=exp
 
 ######## data paths
@@ -11,7 +18,7 @@ eval_path=data/qvhighlight/highlight_val_release.jsonl
 eval_split_name=val
 
 ######## setup video+text features
-feat_root=../features/qvhighlight
+feat_root=/home/atuin/v100dd/v100dd19/qvhighlight
 
 
 # video features
