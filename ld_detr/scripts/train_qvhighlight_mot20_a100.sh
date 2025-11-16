@@ -14,8 +14,8 @@ results_root=/home/atuin/v100dd/v100dd19/ld-detr/outputs/results_mot20
 exp_id=exp
 
 ######## data paths
-train_path=/home/atuin/v100dd/v100dd19/FlashVTG/internvideo2/mot17_train_release.jsonl
-eval_path=/home/atuin/v100dd/v100dd19/FlashVTG/internvideo2/mot17_val_release.jsonl
+train_path=/home/atuin/v100dd/v100dd19/FlashVTG/internvideo2/mot20_train_release.jsonl
+eval_path=/home/atuin/v100dd/v100dd19/FlashVTG/internvideo2/mot20_val_release.jsonl
 eval_split_name=val
 
 ######## setup video+text features
